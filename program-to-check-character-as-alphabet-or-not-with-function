@@ -1,0 +1,18 @@
+#include <stdio.h>
+void alphabet (char);
+int main()
+{
+    char ch  ;
+    //input the value ch 
+    printf ("character\n");
+    scanf("%c",& ch);
+    alphabet (ch);
+    return 0;
+}
+void alphabet (char ch ) 
+
+{ if (( ch>='a'  && ch<='z') || (ch>='A'  && ch<='Z'))
+    printf ("alphabet ");
+    else 
+    printf("not an alphabet "); 
+}
