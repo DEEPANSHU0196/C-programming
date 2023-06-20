@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main ()
+{
+
+int a,b;
+
+  printf("write the no.");
+  scanf("%d%d",&a,&b);
+  if (a>b)
+  printf("integer a is greater ");
+  else 
+  printf("integer b is greater ");
+return 0;
+}
