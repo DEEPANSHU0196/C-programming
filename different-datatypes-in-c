@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+     int a; //declaration  
+     a=5;  //initilization
+     printf("%d\n",a);   //format specifier 
+     a=6;                //assignment 
+     printf("%d",a);
+     int b=7,c=98;//declaration+ initilaziation 
+     printf("b=%d\n",b);
+     printf("c=%d\n",c);
+    return 0;
+}
