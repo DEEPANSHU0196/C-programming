@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct employee
+{
+    char designation [5];
+    int salary;
+};
+    int main()
+{  
+    struct employee s ;
+    printf("designation,salary");
+    scanf("%s%d",s.designation,&s.salary);   
+    printf("%s      %d",s.designation,s.salary);
+    return 0;
+}
