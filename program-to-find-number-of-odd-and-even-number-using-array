@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int X[10],i,e,o;
+    printf("ENTER TEN NUMBERS") ;    
+    for (i=0;i<=9;i++)
+    scanf("%d\n",&X[i]);
+    for(i=0;i<=9;i++)
+    printf ("%d\n",X[i]);
+    for(i=0;i<=9;i++)
+    if (X[i]%2==0)
+      e++;
+    else 
+      o++; 
+    printf("no. of Even no.=%d\n",e);
+    printf("no. of odd no. =%d",o);
+    return 0;
+}
