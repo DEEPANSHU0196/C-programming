@@ -1,0 +1,18 @@
+#include<stdio.h>
+void greater(int,int);
+int main ()
+{
+int a,b;
+//input the value a & b
+    printf("write the no.");
+    scanf("%d%d",&a,&b);
+    greater(a,b);
+    return 0;
+}
+void greater (int a,int b)
+{
+if (a>b) 
+    printf("integer a is greater ");
+else
+    printf("integer b is greater ");
+}
