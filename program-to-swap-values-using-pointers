@@ -1,0 +1,26 @@
+#include<stdio.h>
+void swapv();
+int main()
+{
+    int a=10, b=20,c,d;
+    a=&c;
+    b=&d;
+    printf("\naddress of a=%u",&c);
+    printf("\naddress of b=%u",&d);
+    swapv (a,b);
+    printf("\na=%d b=%d",a,b);
+   
+    return 0;
+}
+void swapv(int x, int y)
+{
+    int t,k,j;
+    x=&j ;
+    y=&k;
+    printf("\naddress of x=%u",&j);
+    printf("\naddress of y=%u",&k);
+    t=x;
+    x=y;
+    y=t;
+    printf("\nx=%d y=%d",x,y);   
+}
