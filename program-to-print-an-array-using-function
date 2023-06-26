@@ -1,0 +1,15 @@
+#include<stdio.h>
+void print(int A[5] )
+{
+	int i;
+	for(i=0;i<5;i++)
+	printf("%d",A[i]);
+}
+void main()
+{
+	int B[5],i;
+    printf("Enter Numbers\n");
+	for(i=0;i<5;i++)
+	scanf("%d",&B[i]);
+	print(B);
+}
