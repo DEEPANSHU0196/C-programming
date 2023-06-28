@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct employee 
+{
+    char name[10] ;
+    char designation[40];
+    float salary;
+};
+ int main()
+{
+    struct employee e;
+    printf("Your name and designation");
+    scanf("%s   %s",e.name,e.designation);
+    printf("%s %s",e.name,e.designation);
+    printf("\nYour Salary");
+    scanf("%f",&e.salary);
+    printf("%f",e.salary);
+}
