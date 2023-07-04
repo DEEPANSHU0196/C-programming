@@ -1,0 +1,17 @@
+#include <stdio.h>
+void leap(int );
+int main()
+{
+    int days ;
+        printf ("Input the value ");
+        scanf("%d",&days);
+    leap(days);
+    return 0;
+}
+void leap(int days)
+{
+    if (days%4==0)
+        printf ("leap year");
+    else 
+        printf("not a leap year");
+}
