@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char A[20]="C PROGRAMMING";
+        printf("Length of String=%ld",strlen(A));
+    return 0;
+}
