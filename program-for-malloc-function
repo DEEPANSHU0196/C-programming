@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include <cstdlib>
+#include<conio.h>
+int  main()
+{
+int *p;
+
+p=(int *)malloc(sizeof(int));
+  printf("\n Enter a value");
+  scanf("%d",p);
+*p=*p+1;
+  printf("\nThe value=%d",*p);
+  getch();
+return 0;
+}
