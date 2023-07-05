@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int r,c,s;
+    for(r='A';r<='C';r++)
+{   
+    for(s='A';s<=r;s++)
+        printf("%c",r);
+        printf("\n");
+    
+}
+return 0;
+}
