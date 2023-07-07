@@ -4,16 +4,16 @@ int main()
 {
     int num ;
     //input the value a  
-    printf ("Input the value ");
-    scanf("%d",&num);
-    check ( num ) ;
+        printf ("Input the value ");
+        scanf("%d",&num);
+        check ( num ) ;
     return 0;
 }
 void check (int num)
 {   if (num%2==0)
-    printf ("no. is even ");
+        printf ("no. is even ");
     else 
-    printf("no. is odd ");
+        printf("no. is odd ");
 }
 
   
