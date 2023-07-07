@@ -1,0 +1,21 @@
+#include<stdio.h>
+union size 
+{
+    char name[40];
+    int age;
+    float bs;
+};
+struct name
+{
+    char name[40];
+    int age;
+    float bs;
+};
+int main()
+{
+    union size e;
+    struct name s;
+      printf("The size of Union is =%ld",sizeof(e));
+      printf("\nThe size of structure is =%ld",sizeof(s));
+    return 0;
+}
