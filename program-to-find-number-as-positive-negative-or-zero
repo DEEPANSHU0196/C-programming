@@ -6,12 +6,12 @@ int a;
   printf("write the no.");
   scanf("%d",&a);
   if (a>0)
-  printf("the no. is positive ");
+    printf("the no. is positive ");
   else if (a<0)
-  printf("the no. is negative ");
+    printf("the no. is negative ");
   else if (a==0)
-  printf("the no. is zero");
+    printf("the no. is zero");
   else 
-  printf("invalid");
+    printf("invalid");
   return 0;
 }
