@@ -1,0 +1,13 @@
+#include<stdio.h>
+enum week{mon=1,tue,wed,thu,fri,sat,sun};
+int main()
+{
+    enum week days;
+    int i;
+    for(i=mon;i<=sun;i++)
+{
+    printf("%d\t",i);
+}
+    return 0;
+}
+
