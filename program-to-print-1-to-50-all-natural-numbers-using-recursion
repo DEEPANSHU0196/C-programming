@@ -1,0 +1,14 @@
+#include<stdio.h>
+int nat(int );
+int main()
+{
+    int i;
+    for(i=0;i<50;i++)
+    {
+        printf("\n%d",nat(i));
+    }
+}
+int nat (int n)
+{
+    return n+1;
+}
