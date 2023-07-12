@@ -1,0 +1,21 @@
+#include<stdio.h>
+int fact(int );
+int main()
+{
+    int S,n;
+    scanf("%d",&n);
+    S=fact(n);
+    printf("%d     factorail=%d",n,S);
+    return 0;
+}
+int fact (int n)
+{
+    if(n==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return n*fact (n-1);
+    }
+}
