@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main  
+{
+    public static void main (String [] args )
+    {
+        Main m=new Main();
+        m.another();   
+    }
+     void another()
+    {
+        Scanner name = new Scanner(System.in);
+        System.out.println("Enter the Number");
+        int a = name.nextInt();
+        int b = name.nextInt();
+        
+        if (a>b)
+        System.out.println(a+"  That is a is greater");
+        else 
+        System.out.println(b+"  That is b is greater");
+    }
+}
