@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float sum(float a, float b);
+float subtract(float a, float b);
+float multiply(float a, float b);
+float division(float a, float b);
+
+int main()
+{
+    int option;
+    float v1, v2, squareRoot, cubeRoot, result;
+
+    do
+    {
+        printf("\n*Choose the option*\n");
+        printf("     1.Addition\n");
+        printf("     2.Subtraction\n");
+        printf("     3.Multiplication\n");
+        printf("     4.Division\n");
+        printf("     5.Square Root\n");
+        printf("     6.Cube Root\n");
+        printf("     7.Power\n");
+        printf("     8.Exit\n");
+        scanf("%d", &option);
+
+        switch (option)
+        {
+        case 1:
+            printf("Enter 2 values\n");
+            scanf("%f%f", &v1, &v2);
+            printf("sum of two values = %f\n", sum(v1, v2));
+            break;
+        case 2:
+            printf("Enter 2 values\n");
+            scanf("%f%f", &v1, &v2);
+            printf("subtract of two values = %f\n", subtract(v1, v2));
+            break;
+        case 3:
+            printf("Enter 2 values\n");
+            scanf("%f%f", &v1, &v2);
+            printf("multiply of two values = %f\n", multiply(v1, v2));
+            break;
+        case 4:
+            printf("Enter 2 values\n");
+            scanf("%f%f", &v1, &v2);
+            printf("division of two values = %f\n", division(v1, v2));
+            break;
+        case 5:
+            printf("Enter the Number\n");
+            scanf("%f", &v1);
+            if (v1 >= 0)
+            {
+                squareRoot = sqrt(v1);
+                printf("Square root = %f\n", squareRoot);
+            }
+            else
+            {
+                printf("Error: Cannot calculate square root of a negative number.\n");
+            }
+            break;
+        case 6:
+            printf("Enter the number");
+            scanf("%f", &v1);
+            cubeRoot = cbrt(v1);
+            printf("Cube root =%f\n", cubeRoot);
+            break;
+        case 7:
+            printf("Enter the base: ");
+            scanf("%f", &v1);
+            printf("Enter the exponent: ");
+            scanf("%f", &v2);
+            result = pow(v1, v2);
+            printf("%f\n", result);
+            break;
+        case 8:
+            printf("Calculator Closed\n");
+            break;
+        default:
+            printf("Wrong choice\n");
+        }
+    } while (option != 8);
+
+    return 0;
+}
+
+float sum(float a, float b)
+{
+    return a + b;
+}
+
+float subtract(float a, float b)
+{
+    return a - b;
+}
+
+float multiply(float a, float b)
+{
+    return a * b;
+}
+
+float division(float a, float b)
+{
+    return a / b;
+}
