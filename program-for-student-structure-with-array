@@ -1,0 +1,22 @@
+#include<stdio.h>
+struct student 
+{
+    char name[50];
+    int age;
+    int salary;
+};
+int main()
+{
+    struct student std[5];
+    int i;
+    for(i=0;i<=3;i++)
+    {
+        printf("\nEnter the Details of Employee:(%d)",i+1);
+        printf("\nEnter your Name:");
+        scanf("%s",std[i].name);
+        printf("\nEnter your Age:");
+        scanf("%d",&std[i].age);
+        printf("\n-->Name=%s Age=%d\n",std[i].name,std[i].age);
+    }
+    return 0;
+}
